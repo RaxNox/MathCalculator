@@ -15,7 +15,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PercentageActivity"></activity>
+        <activity
+            android:name=".PercentageActivity"
+            android:label="@string/title_percentage_activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name=".MaximumActivity"
+            android:label="@string/title_maximum_activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+            ></activity>
     </application>
 
 </manifest>
